@@ -69,14 +69,14 @@ public class ExpActivity extends Activity {
                 "Réunions clients et rédaction du cahier des charges.");
 
         List<String> t2014 = new ArrayList<String>();
-        t2014.add("Développeur Web et logiciel et support technique\nLYV2 Performance (78)\nStage de fin d'études");
+        t2014.add("Développeur Web et logiciel et support technique\nLYV2 Performance (75)\nStage de fin d'études");
         t2014.add("   * Développement avec les logiciels PCSoft");
-        t2016.add("         - WinDev : TheTime3D, gestionnaire d'imprimantes 3D");
-        t2016.add("         - WebDev : Pinapple, site web personnel");
-        t2016.add("         - WinDev Mobile : Toshokanime, gestionnaire de bibliothèque littéraire");
+        t2014.add("         - WinDev : TheTime3D, gestionnaire d'imprimantes 3D");
+        t2014.add("         - WebDev : Pinapple, site web personnel");
+        t2014.add("         - WinDev Mobile : Toshokanime, gestionnaire de bibliothèque littéraire");
         t2014.add("   * Assistance technique sur site et à distance");
-        t2016.add("         - Dépannage à distance avec TeamViewer");
-        t2016.add("         - Assistance sur site (installation de poste, maintenance");
+        t2014.add("         - Dépannage à distance avec TeamViewer");
+        t2014.add("         - Assistance sur site (installation de poste, maintenance");
 
         listDataChild.put(listDataHeader.get(0), pre);
         listDataChild.put(listDataHeader.get(1), t2016);

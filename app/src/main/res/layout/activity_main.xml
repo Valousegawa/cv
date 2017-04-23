@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -25,15 +25,29 @@
             android:textSize="25dp"
             android:paddingBottom="15dp"/>
 
-        <TextView
-            android:id="@+id/textView2"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="HUYENH\nValentin\nhuyenh.valentin@gmail.com"
-            tools:layout_editor_absoluteX="163dp"
-            tools:layout_editor_absoluteY="16dp"
             android:gravity="center"
-            android:paddingBottom="15dp"/>
+            android:paddingBottom="15dp"
+            android:layout_weight="2"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/valou"
+                android:layout_weight="1"/>
+        </LinearLayout>
 
         <Button
             android:id="@+id/buttonExp"
@@ -60,15 +74,6 @@
             android:text="Formations"
             tools:layout_editor_absoluteX="148dp"
             tools:layout_editor_absoluteY="296dp"
-            android:gravity="center"/>
-
-        <Button
-            android:id="@+id/buttonExt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Extras"
-            tools:layout_editor_absoluteX="147dp"
-            tools:layout_editor_absoluteY="361dp"
             android:gravity="center"/>
 
     </LinearLayout>

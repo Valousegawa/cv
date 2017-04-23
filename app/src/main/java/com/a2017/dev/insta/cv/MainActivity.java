@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
-    private Button cpt, exp, form, ext;
+    private Button cpt, exp, form;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,6 @@ public class MainActivity extends Activity {
         cpt = (Button) findViewById(R.id.buttonCpt);
         exp = (Button) findViewById(R.id.buttonExp);
         form = (Button) findViewById(R.id.buttonForm);
-        ext = (Button) findViewById(R.id.buttonExt);
 
         cpt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +31,14 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ExpActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        form.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FormActivity.class);
                 startActivity(intent);
             }
         });
